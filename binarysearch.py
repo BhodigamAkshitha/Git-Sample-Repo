@@ -1,8 +1,19 @@
+"""Simple Binary Search Tree implementation with demo.
+
+This module provides `Node` and `BinarySearchTree` classes for
+insertion, search, traversal and deletion operations. Run the file
+directly to see a small demo.
+"""
+
+
 class Node:
     def __init__(self, key):
         self.key = key
         self.left = None
         self.right = None
+
+    def __repr__(self):
+        return f"Node({self.key})"
 
 
 class BinarySearchTree:
